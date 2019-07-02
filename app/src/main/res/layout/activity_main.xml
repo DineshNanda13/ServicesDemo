@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/holo_blue_bright">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_ID"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:onClick="startServiveClicked"
+        android:id="@+id/startService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Service"
+        android:textStyle="bold"
+        android:layout_below="@+id/editText_ID"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_bright"/>
+
+    <Button
+        android:onClick="stopServiceClicked"
+        android:id="@+id/stopService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Service"
+        android:textStyle="bold"
+        android:layout_below="@+id/startService"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_bright"/>
+
+    <Button
+        android:onClick="bindServiceClicked"
+        android:id="@+id/bindService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bind Service"
+        android:textStyle="bold"
+        android:layout_below="@+id/stopService"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_bright"/>
+
+    <Button
+        android:onClick="unbindServiceClicked"
+        android:id="@+id/unbindService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unbind Service"
+        android:textStyle="bold"
+        android:layout_below="@+id/bindService"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_bright"/>
+
+    <Button
+        android:onClick="getRandomNumberClicked"
+        android:id="@+id/getRandomNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Random Number"
+        android:textStyle="bold"
+        android:layout_below="@+id/unbindService"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_bright"/>
+
+
+
+</RelativeLayout>
